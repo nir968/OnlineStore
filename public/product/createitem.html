@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Product</title>
+    <link rel="stylesheet" href="createitem.css">
+    <script defer src="createitem.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <a href="../homepage.html">
+            <img src="../Pictures/logo.jpg" alt="Icon" class="icon">
+        </a>
+    </div>
+    <div class="container">
+        <h1>Create New Product</h1>
+        <form id="create-item-form" enctype="multipart/form-data">
+            <div class="content">
+                <div class="image-container">
+                    <div class="image-background">
+                        <div class="form-group">
+                            <label for="product-name">Product Name</label>
+                            <input type="text" id="product-name" name="name" required>
+                            <button type="button" onclick="searchProductImage()">Search Image</button>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-image">Item Photo(URL)</label>
+                            <input type="text" id="product-image" name="image">
+                        </div>
+                        <div id="imageContainer">
+                            <img id="productImage" alt="Product Image" style="display: none;" onclick="nextImage()">
+                        </div>
+                        <div class="form-group">
+                            <label for="product-category">Category</label>
+                            <div class="select-container">
+                                <select id="product-category" name="category" required>
+                                    <option value="Dairy and Eggs">Dairy and Eggs</option>
+                                    <option value="Fruit and Vegetables">Fruit and Vegetables</option>
+                                    <option value="Meat and Fish">Meat and Fish</option>
+                                    <option value="Sweet & Salty">Sweet & Salty</option>
+                                    <option value="Beverages">Beverages</option>
+                                    <option value="Frozen Produce">Frozen Produce</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="product-subCategory">Sub Category</label>
+                            <div class="select-container">
+                                <select id="product-subCategory" name="subCategory" required>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="details">
+                    <div class="form-group">
+                        <label for="product-manufacturer">Manufacturer</label>
+                        <input type="text" id="product-manufacturer" name="manufacturer" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-price">Price (₪)</label>
+                        <input type="number" id="product-price" name="price" step="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-currentStock">Current Stock</label>
+                        <input type="number" id="product-currentStock" name="currentStock" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-weight">Weight</label>
+                        <input type="number" id="product-weight" name="weight" step="0.01" min="0.01" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="product-weightUnit">Weight Unit</label>
+                        <div class="select-container">
+                            <select id="product-weightUnit" name="weightUnit" class="form-control">
+                                <option value="kg">KG</option>
+                                <option value="g">G</option>
+                                <option value="ml">ML</option>
+                                <option value="l">L</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button type="submit">Create Product</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

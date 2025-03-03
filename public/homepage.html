@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Super Eats</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet">
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAi-Q_FHvGc1tMu8_kwoPtu_TRheoXiLXI&libraries=places&callback=initMap" async defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-custom" id="navbar">
+    <a class="navbar-brand" href="newpage.html">
+      <img src="./Pictures/logo.jpg" alt="Super Eats Logo">
+    </a>
+  </nav>
+</header>
+
+<div class="container-fluid main-content" id="homepage">
+  <div class="row">
+    <div class="col-md-9">
+      <div class="grid-category">
+        <h3 class="mt-4">Dairy and Eggs</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Milk Alternatives">
+            <img src="./Pictures/Milk-Alternatives.png" alt="Milk Alternatives">
+            <h6>Milk Alternatives</h6>
+          </div>
+          <div class="category-item" data-subcategory="Milk Products">
+            <img src="./Pictures/Milk-Products.png" alt="Milk Products">
+            <h6>Milk Products</h6>
+          </div>
+          <div class="category-item" data-subcategory="Milk">
+            <img src="./Pictures/Milk.png" alt="Milk">
+            <h6>Milk</h6>
+          </div>
+          <div class="category-item" data-subcategory="Soft Cheeses">
+            <img src="./Pictures/Soft-Cheeses.png" alt="Soft Cheeses">
+            <h6>Soft Cheeses</h6>
+          </div>
+          <div class="category-item" data-subcategory="Hard Cheeses">
+            <img src="./Pictures/Hard-Cheeses.png" alt="Hard Cheeses">
+            <h6>Hard Cheeses</h6>
+          </div>
+          <div class="category-item" data-subcategory="Yogurts">
+            <img src="./Pictures/Yogurts.png" alt="Yogurts">
+            <h6>Yogurts</h6>
+          </div>
+        </div>
+
+      <div class="grid-category">
+        <h3 class="mt-4">Fruit and Vegetables</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Fruit">
+            <img src="./Pictures/Fruit.png" alt="Fruit">
+            <h6>Fruit</h6>
+          </div>
+          <div class="category-item" data-subcategory="Vegetables">
+            <img src="./Pictures/Vegetables.png" alt="Vegetables">
+            <h6>Vegetables</h6>
+          </div>
+          <div class="category-item" data-subcategory="Herbs">
+            <img src="./Pictures/Herbs.png" alt="Herbs">
+            <h6>Herbs</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-category">
+        <h3 class="mt-4">Meat and Fish</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Meat">
+            <img src="./Pictures/Meat.png" alt="Meat">
+            <h6>Meat</h6>
+          </div>
+          <div class="category-item" data-subcategory="Fish">
+            <img src="./Pictures/Fish.png" alt="Fish">
+            <h6>Fish</h6>
+          </div>
+          <div class="category-item" data-subcategory="Chicken">
+            <img src="./Pictures/Chicken.png" alt="Chicken">
+            <h6>Chicken</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-category">
+        <h3 class="mt-4">Sweet & Salty</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Sweet">
+            <img src="./Pictures/Sweet.png" alt="Sweet">
+            <h6>Sweet</h6>
+          </div>
+          <div class="category-item" data-subcategory="Salty">
+            <img src="./Pictures/Salty.png" alt="Salty">
+            <h6>Salty</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-category">
+        <h3 class="mt-4">Beverages</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Juice">
+            <img src="./Pictures/Juice.png" alt="Juice">
+            <h6>Juice</h6>
+          </div>
+          <div class="category-item" data-subcategory="Soda">
+            <img src="./Pictures/Soda.png" alt="Soda">
+            <h6>Soda</h6>
+          </div>
+          <div class="category-item" data-subcategory="Alcohol">
+            <img src="./Pictures/Alcohol.png" alt="Alcohol">
+            <h6>Alcohol</h6>
+          </div>
+          <div class="category-item" data-subcategory="Water">
+            <img src="./Pictures/Water.png" alt="Water">
+            <h6>Water</h6>
+          </div>
+        </div>
+      </div>
+
+      <div class="grid-category">
+        <h3 class="mt-4">Frozen Produce</h3>
+        <div class="category-grid">
+          <div class="category-item" data-subcategory="Ice Cream">
+            <img src="./Pictures/Ice Cream.png" alt="Ice Cream">
+            <h6>Ice Cream</h6>
+          </div>
+          <div class="category-item" data-subcategory="Dessert">
+            <img src="./Pictures/Dessert.png" alt="Dessert">
+            <h6>Dessert</h6>
+          </div>
+          <div class="category-item" data-subcategory="Frozen Meat">
+            <img src="./Pictures/Frozen Meat.png" alt="Frozen Meat">
+            <h6>Frozen Meat</h6>
+          </div>
+          <div class="category-item" data-subcategory="Frozen Vegetables">
+            <img src="./Pictures/Frozen Vegetables.png" alt="Frozen Vegetables">
+            <h6>Frozen Vegetables</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 cart-section">
+      <h4>Shopping Cart</h4>
+      <div class="cart-content">
+        <div id="cart-items"></div>
+        <p class="reg-text">Total Sum: <span id="total-sum">0</span></p>
+        <div class="d-grid gap-2">
+          <button class="btn btn-primary btn-block purchase-button" onclick="payNow()">Pay Now <i class="bi bi-cart"></i></button>
+          <button class="btn btn-danger btn-block clear-button" id="Clear-Cart" onclick="clearCart()">Clear Cart <i class="bi bi-trash"></i></button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="signatureModal" class="modal">
+  <div class="modal-content">
+    <h4>Please sign your signature</h4>
+    <canvas id="signatureCanvas"></canvas>
+    <button class="btn btn-success" id="saveSignature">Save</button>
+  </div>
+</div>
+<footer class="custom-footer">
+  <div class="footer-content">
+    <div class="footer-section about">
+      <h5>About Super Eats</h5>
+      <p>Your one-stop shop for fresh and organic groceries. Delivering quality products straight to your doorstep.</p>
+    </div>
+    <div class="footer-section links">
+      <h5>Quick Links</h5>
+      <ul>
+        <li><a href="homepage.html">Home</a></li>
+        <li><a href="category_page.html">Products</a></li>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="footer-section contact">
+      <h5>Contact Us</h5>
+      <p><i class="bi bi-telephone"></i> +1 234 567 890</p>
+      <p><i class="bi bi-envelope"></i> info@supereats.com</p>
+      <p><i class="bi bi-geo-alt"></i> 123 Super Eats Lane, Food City</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    &copy; 2024 Super Eats | Designed by Super Eats Team
+  </div>
+</footer>
+  <div class="video-container">
+    <video controls autoplay muted playsinline width="640" height="360">
+      <source src="./video/vid.mp4" type="video/mp4">
+    </video>
+  </div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jwt-decode/build/jwt-decode.min.js"></script>
+<script src="./src/homepage.js"></script>
+<script src="./src/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+body {
+    background-color: #f8f9fa;
+  }
+  
+  .navbar-custom {
+    background-color: #46ad7f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000; /* Ensure the header stays on top */
+  }
+  
+  .navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-custom .navbar-brand img {
+    max-width: 150px;
+  }
+  
+  .navbar-custom .btn-filter a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .navbar-custom .btn-filter a:hover {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .main-content {
+    padding: 50px 20px;
+  }
+  
+  .login-card {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .nav-tabs .nav-link {
+    color: #46ad7f;
+  }
+  
+  .nav-tabs .nav-link.active {
+    color: #ffffff;
+    background-color: #46ad7f;
+  }
+  
+  .btn-primary {
+    background-color: #46ad7f;
+    border: none;
+  }
+  
+  .btn-primary:hover {
+    background-color: #3c976b;
+  }
+  
+  .d-grid {
+    display: grid;
+    justify-content: center;
+  }
+  #map{
+    height: 500px; 
+    width: 100%;
+  }
+  
+  
+  #pac-input {
+    z-index: 1051; /* Ensures the input is above the modal backdrop */
+  }
+  .pac-container {
+    z-index: 2052 !important; /* Ensures the suggestions are above the modal */
+  }

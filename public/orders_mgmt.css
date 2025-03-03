@@ -1,0 +1,88 @@
+.navbar-custom {
+    background-color: #46ad7f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-custom .form-control {
+    border-radius: 25px;
+    width: 600px;
+}
+
+.navbar-custom .input-group {
+    flex-grow: 1;
+    max-width: 600px;
+    height: 50px;
+}
+
+.navbar-custom .navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-custom .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .btn-filter {
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.main-content {
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.login_btn {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.fixed-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: white;
+    z-index: 1000;
+}
+
+.mt-4-header {
+    font-size: xx-large;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.mt-4 {
+    font-size: large;
+    font-family: Courier, monospace;
+}
+
+.form-select {
+    font-family: Courier, monospace;
+    border-radius: 25px;
+    margin-left: 20px;
+    width:150px;
+}

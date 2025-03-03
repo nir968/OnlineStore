@@ -1,0 +1,149 @@
+.navbar-custom {
+    background-color: #46ad7f;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.navbar-custom .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.navbar-custom .form-control {
+    border-radius: 25px;
+    width: 600px;
+}
+
+.navbar-custom .input-group {
+    flex-grow: 1;
+    max-width: 600px;
+    height: 50px;
+}
+
+.navbar-custom .navbar-nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-custom .nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-custom .btn-filter {
+    background-color: #f8f9fa;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 25px;
+    margin-right: 10px;
+}
+
+.main-content {
+    padding: 20px;
+    padding-top: 100px;
+}
+
+.login_btn {
+    color: black;
+    text-decoration: none;
+}
+
+.logo {
+    max-width: 100px;
+}
+
+.mt-4 {
+    font-size: large;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+.mt-4-header {
+    font-size: xx-large;
+    font-family: Courier, monospace;
+    font-weight: bold;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-control-sm {
+    width: 100%;
+    max-width: 300px;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    border-color: #46ad7f;
+}
+
+.btn-primary {
+    background-color: #46ad7f;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #3c9f70;
+}
+
+.btn-address {
+    background-color: #46ad7f;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 8px 20px;
+    border-radius: 25px;
+}
+
+.btn-address:hover {
+    background-color: #3c9f70;
+}
+
+.text-center {
+    margin-top: 20px;
+}
+
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    vertical-align: middle;
+}
+
+.modal-body {
+    position: relative;
+}
+
+#map {
+    height: 500px;
+    width: 100%;
+}
+
+#pac-input {
+    z-index: 1051;
+}
+
+.pac-container {
+    z-index: 2052 !important;
+}
+
+.form-static-text {
+    font-size: medium;
+    font-family: Courier, monospace;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.modal-backdrop {
+    background-color: rgba(0, 0, 0, 0.3); /* Adjust the opacity as needed */
+  }
+ 
