@@ -30,7 +30,14 @@ For detailed information on the application, please refer to the [onlineStore Do
 ### Installation
 1. Clone the repository
 2. Open terminal
-3. npm i
-4. Go to ״server״ dir
-5. Run locally: npm start , Run with MongoDB Atlas: npm run start:test
+ ```bash 
+npm install
+```
+**Run the Project:**
+   - Start the development server with the following command:
+     ```bash
+     npm run start
+     ```
+5. Go to ״server״ dir
+6. Run locally: npm start , Run with MongoDB Atlas: npm run start:test
    
